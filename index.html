@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- Declares the document type and sets the language to English -->
+<html lang="en">
+  <head>
+    <!-- Sets the character encoding to UTF-8 -->
+    <meta charset="UTF-8" />
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ensures compatibility with older versions of Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Links to the external CSS file for styling -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Sets the title of the web page -->
+    <title>Pig Game</title>
+  </head>
+
+  <body>
+    <main>
+      <!-- Section for Player 1 -->
+      <section class="player player--0 player--active">
+        <!-- Displays the name of Player 1 -->
+        <h2 class="name" id="name--0">Player 1</h2>
+
+        <!-- Displays the score of Player 1 -->
+        <p class="score" id="score--0">43</p>
+
+        <div class="current">
+          <!-- Label for the current score -->
+          <p class="current-label">Current</p>
+
+          <!-- Displays the current score of Player 1 -->
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+
+      <!-- Section for Player 2 -->
+      <section class="player player--1">
+        <!-- Displays the name of Player 2 -->
+        <h2 class="name" id="name--1">Player 2</h2>
+
+        <!-- Displays the score of Player 2 -->
+        <p class="score" id="score--1">24</p>
+
+        <div class="current">
+          <!-- Label for the current score -->
+          <p class="current-label">Current</p>
+
+          <!-- Displays the current score of Player 2 -->
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <!-- Image of the dice -->
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+
+      <!-- Button to start a new game -->
+      <button class="btn btn--new">🔄 New game</button>
+
+      <!-- Button to roll the dice -->
+      <button class="btn btn--roll">🎲 Roll dice</button>
+
+      <!-- Button to hold the current score -->
+      <button class="btn btn--hold">📥 Hold</button>
+    </main>
+
+    <!-- Links to the external JavaScript file for functionality -->
+    <script src="script.js"></script>
+  </body>
+</html>
